@@ -38,7 +38,7 @@ class Demo extends Component {
     render(){
         return(
              <ReactLeafletEditable
-                ref={this.mapRef}
+                ref={this.editRef}
              >
                 <Map
                     ref={this.mapRef}
@@ -101,12 +101,15 @@ onVertexMarkerMetaKeyClick | function |hook to leaflet-editable ```editable:vert
 Methods
 -
 
-| name       | type      | description     | params|
-| ---------- | :-----------: | :-----------: | :-----------: |
-| startPolygon | function | start edit a polygon layer ||
-| startPolyline | function | start edit a polyline layer ||
-| startMarker | function | start edit a marker layer ||
-| startRectangle | function | start edit a rect layer ||
-| startCircle | function | start edit a circle layer ||
-| startHole | function | start edit a hole layer |(editor,latlng)|
-| clearAll | function | clear all editing layers ||
+| name       | type          | description   | params        | returns       |
+| ---------- | :-----------: | :-----------: | :-----------: | :-----------: |
+| drawing | function | Returns true if drawing action is ongoing. | () | boolean |
+| stopDrawing | function | Stops ongoing drawing, regardless of editor. | () | |
+| commitDrawing | function | Commits ongoing drawing, regardless of editor. | () | |
+| startPolygon | function | start edit a polygon layer |()||
+| startPolyline | function | start edit a polyline layer |()||
+| startMarker | function | start edit a marker layer |()||
+| startRectangle | function | start edit a rect layer |()||
+| startCircle | function | start edit a circle layer |()||
+| startHole | function | start edit a hole layer |(editor,latlng)||
+| clearAll | function | clear all editing layers |()||
