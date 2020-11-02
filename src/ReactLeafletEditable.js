@@ -198,7 +198,7 @@ export default class ReactLeafletEditable extends Component {
     return editTools.commmitDrawing();
   };
 
-  startPolygon = () => {
+  startPolygon = (latlng = null, options = {}) => {
     const { map } = this.state;
     if (!map) return null;
 
@@ -210,10 +210,10 @@ export default class ReactLeafletEditable extends Component {
       return null;
     }
 
-    return editTools.startPolygon();
+    return editTools.startPolygon(latlng, options);
   };
 
-  startPolyline = () => {
+  startPolyline = (latlng = null, options = {}) => {
     const { map } = this.state;
     if (!map) return null;
 
@@ -225,10 +225,10 @@ export default class ReactLeafletEditable extends Component {
       return null;
     }
 
-    return editTools.startPolyline();
+    return editTools.startPolyline(latlng, options);
   };
 
-  startMarker = () => {
+  startMarker = (latlng = null, options = {}) => {
     const { map } = this.state;
     if (!map) return null;
 
@@ -240,10 +240,10 @@ export default class ReactLeafletEditable extends Component {
       return null;
     }
 
-    return editTools.startMarker();
+    return editTools.startMarker(latlng, options);
   };
 
-  startRectangle = () => {
+  startRectangle = (latlng = null, options = {}) => {
     const { map } = this.state;
     if (!map) return null;
 
@@ -255,10 +255,10 @@ export default class ReactLeafletEditable extends Component {
       return null;
     }
 
-    return editTools.startRectangle();
+    return editTools.startRectangle(latlng, options);
   };
 
-  startCircle = () => {
+  startCircle = (latlng = null, options = {}) => {
     const { map } = this.state;
     if (!map) return null;
 
@@ -270,7 +270,7 @@ export default class ReactLeafletEditable extends Component {
       return null;
     }
 
-    return editTools.startCircle();
+    return editTools.startCircle(latlng, options);
   };
 
   startHole = (editor, latlng) => {
