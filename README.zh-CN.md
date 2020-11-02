@@ -106,10 +106,10 @@ Methods
 | drawing | function | Returns true if drawing action is ongoing. | () | boolean |
 | stopDrawing | function | Stops ongoing drawing, regardless of editor. | () | |
 | commitDrawing | function | Commits ongoing drawing, regardless of editor. | () | |
-| startPolygon | function | start edit a polygon layer |()||
-| startPolyline | function | start edit a polyline layer |()||
-| startMarker | function | start edit a marker layer |()||
-| startRectangle | function | start edit a rect layer |()||
-| startCircle | function | start edit a circle layer |()||
+| startPolygon | function | start edit a polygon layer |(latlng, options)| L.Polygon |
+| startPolyline | function | start edit a polyline layer |(latlng, options)| L.Polyline|
+| startMarker | function | start edit a marker layer |(latlng, options)|L.Marker|
+| startRectangle | function | start edit a rect layer |(latlng, options)|L.Rectangle|
+| startCircle | function | start edit a circle layer |(latlng, options)|L.Circle|
 | startHole | function | start edit a hole layer |(editor,latlng)||
 | clearAll | function | clear all editing layers |()||
