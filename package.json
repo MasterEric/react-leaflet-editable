@@ -24,7 +24,7 @@
   "author": "zjfcool",
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.6.0",
+    "leaflet": "github:MasterEric/Leaflet#dist",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
